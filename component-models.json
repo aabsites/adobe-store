@@ -223,26 +223,26 @@
         "fields": [
           {
             "component": "text",
-            "name": "title",
+            "name": "div:nth-child(1)>h3:nth-child(1)",
             "label": "Title",
             "valueType": "string"
           },
           {
-            "component": "richtext",
-            "name": "description",
-            "label": "Description",
-            "valueType": "string"
-          },
-          {
             "component": "reference",
-            "name": "image",
+            "name": "div:nth-child(1)>p:nth-child(2)>picture:nth-child(1)>img:nth-child(3)[src]",
             "label": "Image",
             "multi": false
           },
           {
             "component": "text",
-            "name": "link",
-            "label": "Link URL",
+            "name": "div:nth-child(1)>p:nth-child(2)>picture:nth-child(1)>img:nth-child(3)[alt]",
+            "label": "Image Alt",
+            "multi": false
+          },
+          {
+            "component": "richtext",
+            "name": "div:nth-child(2)",
+            "label": "Card Text",
             "valueType": "string"
           }
         ]
