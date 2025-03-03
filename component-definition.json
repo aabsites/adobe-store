@@ -135,7 +135,7 @@
             "da": {
               "name": "cards-list",
               "rows": 1,
-              "columns": 1
+              "columns": 2
             }
           },
           "model": "cards-list",
@@ -147,7 +147,7 @@
           "plugins": {
             "da": {
               "name": "cards-list-item",
-              "rows": 1,
+              "rows": 2,
               "columns": 0
             }
           },
