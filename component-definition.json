@@ -127,6 +127,31 @@
             }
           },
           "model": "hero"
+        },
+        {
+          "title": "Cards List",
+          "id": "cards-list",
+          "plugins": {
+            "da": {
+              "name": "cards-list",
+              "rows": 1,
+              "columns": 1
+            }
+          },
+          "model": "cards-list",
+          "filter": "cards-list"
+        },
+        {
+          "title": "Cards List Item",
+          "id": "cards-list-item",
+          "plugins": {
+            "da": {
+              "name": "cards-list-item",
+              "rows": 1,
+              "columns": 0
+            }
+          },
+          "model": "cards-list-item"
         }
       ]
     }

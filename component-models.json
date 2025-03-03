@@ -211,5 +211,42 @@
         "multi": false
       }
     ]
+  },
+  {
+    "id": "cards-list-item",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "items",
+        "label": "Cards",
+        "multi": true,
+        "fields": [
+          {
+            "component": "text",
+            "name": "title",
+            "label": "Title",
+            "valueType": "string"
+          },
+          {
+            "component": "richtext",
+            "name": "description",
+            "label": "Description",
+            "valueType": "string"
+          },
+          {
+            "component": "reference",
+            "name": "image",
+            "label": "Image",
+            "multi": false
+          },
+          {
+            "component": "text",
+            "name": "link",
+            "label": "Link URL",
+            "valueType": "string"
+          }
+        ]
+      }
+    ]
   }
 ]
