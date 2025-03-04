@@ -518,3 +518,8 @@ body.columns main > .section:empty {
 main[hidden] {
   display: none !important;
 }
+
+/* Hide old experimentation UI */
+body .hlx-preview-overlay {
+  display: none;
+}
