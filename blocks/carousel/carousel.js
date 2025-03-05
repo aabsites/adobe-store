@@ -1,4 +1,5 @@
 import { fetchPlaceholders } from '../../scripts/aem.js';
+import { moveAttributes } from '../../scripts/scripts.js';
 
 function updateActiveSlide(slide) {
   const block = slide.closest('.carousel');
@@ -82,6 +83,7 @@ function startAutoplay(block, interval = 6000) {
 
 function createSlide(row, slideIndex, carouselId) {
   const slide = document.createElement('li');
+  moveAttributes(row, slide);
   slide.dataset.slideIndex = slideIndex;
   slide.setAttribute('id', `carousel-${carouselId}-slide-${slideIndex}`);
   slide.classList.add('carousel-slide');
