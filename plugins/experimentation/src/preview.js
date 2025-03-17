@@ -514,10 +514,11 @@ async function decorateAudiencesPill(overlay, options, context) {
  */
 export default async function decoratePreviewMode(document, options, context) {
   try {
-    const overlay = getOverlay(options);
-    await decorateAudiencesPill(overlay, options, context);
-    await decorateCampaignPill(overlay, options, context);
-    await decorateExperimentPill(overlay, options, context);
+    // Using DA's Experimentation UI
+    // const overlay = getOverlay(options);
+    // await decorateAudiencesPill(overlay, options, context);
+    // await decorateCampaignPill(overlay, options, context);
+    // await decorateExperimentPill(overlay, options, context);
   } catch (e) {
     // eslint-disable-next-line no-console
     console.log(e);
