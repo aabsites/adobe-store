@@ -68,7 +68,7 @@
     "id": "product-teaser",
     "fields": [
       {
-        "component": "product-picker",
+        "component": "sku",
         "name": "title",
         "label": "Prodcut"
       }
