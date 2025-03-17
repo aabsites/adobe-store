@@ -7,7 +7,7 @@ import getProductsInCategory from './queries/products.graphql.js';
 
 import './styles.css';
 
-const configFile = '/configs-ue.json';
+const configFile = 'https://main--citisignal--aabsites.aem.live/configs.json';
 const defaultConfig = 'prod';
 
 /**
