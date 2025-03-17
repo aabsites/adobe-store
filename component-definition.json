@@ -102,9 +102,7 @@
           "id": "product-teaser",
           "plugins": {
             "da": {
-              "name": "product-teaser",
-              "rows": 1,
-              "columns": 1
+              "unsafeHTML": "<div class=\"product-teaser\"><div><div><p>sku</p></div><div><p></p></div></div></div>"
             }
           },
           "model": "product-teaser"
