@@ -65,6 +65,16 @@
     ]
   },
   {
+    "id": "product-teaser",
+    "fields": [
+      {
+        "component": "sku",
+        "label": "Prodcut",
+        "name": "div:nth-child(1)>div:nth-child(2)>p:nth-child(1)"
+      }
+    ]
+  },
+  {
     "id": "image",
     "fields": [
       {
