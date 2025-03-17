@@ -98,6 +98,18 @@
           "model": "carousel-item"
         },
         {
+          "title": "Product Teaser",
+          "id": "product-teaser",
+          "plugins": {
+            "da": {
+              "name": "product-teaser",
+              "rows": 1,
+              "columns": 1
+            }
+          },
+          "model": "product-teaser"
+        },
+        {
           "title": "Columns",
           "id": "columns",
           "plugins": {
