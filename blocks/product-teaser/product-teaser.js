@@ -62,20 +62,24 @@ function renderPlaceholder(config, block) {
   `));
 }
 
-function renderImage(image, size = 250) {
+function renderImage(image, sku, size = 250) {
   const { url: imageUrl, label } = image;
   const createUrlForWidth = (url, w, useWebply = true) => {
-    const newUrl = new URL(url, window.location);
-    if (useWebply) {
-      newUrl.searchParams.set('format', 'webply');
-      newUrl.searchParams.set('optimize', 'medium');
-    } else {
-      newUrl.searchParams.delete('format');
+    const newUrl = new URL(`${url}/as/${sku}.webp`, window.location);
+    if (w) {
+      newUrl.searchParams.set('width', w);
     }
-    newUrl.searchParams.set('width', w);
-    newUrl.searchParams.delete('quality');
-    newUrl.searchParams.delete('dpr');
-    newUrl.searchParams.delete('bg-color');
+
+    // if (useWebply) {
+    //   newUrl.searchParams.set('format', 'webply');
+    //   newUrl.searchParams.set('optimize', 'medium');
+    // } else {
+    //   newUrl.searchParams.delete('format');
+    // }
+    // newUrl.searchParams.set('width', w);
+    // newUrl.searchParams.delete('quality');
+    // newUrl.searchParams.delete('dpr');
+    // newUrl.searchParams.delete('bg-color');
     return newUrl.toString();
   };
 
@@ -117,7 +121,7 @@ function renderProduct(product, config, block) {
     </div>
   `);
 
-  fragment.querySelector('.image').appendChild(renderImage(product.images[0], 250));
+  fragment.querySelector('.image').appendChild(renderImage(product.images[0], sku, 250));
 
   const addToCartButton = fragment.querySelector('.add-to-cart');
   if (addToCartButton) {
