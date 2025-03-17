@@ -7,7 +7,7 @@ import getProductsInCategory from './queries/products.graphql.js';
 
 import './styles.css';
 
-const configFile = '/configs.json';
+const configFile = 'https://main--adobe-store--aabsites.aem.live/configs.json';
 const defaultConfig = 'prod';
 
 /**
