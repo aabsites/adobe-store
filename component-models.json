@@ -65,6 +65,16 @@
     ]
   },
   {
+    "id": "product-teaser",
+    "fields": [
+      {
+        "component": "product-picker",
+        "name": "title",
+        "label": "Prodcut"
+      }
+    ]
+  },
+  {
     "id": "image",
     "fields": [
       {
